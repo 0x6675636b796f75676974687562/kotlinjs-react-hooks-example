@@ -6,6 +6,8 @@ import org.w3c.dom.url.URLSearchParams
 import react.ChildrenBuilder
 import react.VFC
 import react.create
+import react.dom.html.ButtonType
+import react.dom.html.ReactHTML.button
 import react.dom.html.ReactHTML.code
 import react.dom.html.ReactHTML.div
 import react.dom.html.ReactHTML.h1
@@ -128,11 +130,15 @@ private val RootMenu = VFC {
                 Link {
                     to = USE_LOCATION_PATH
 
-                    code {
-                        +"useLocation()"
-                    }
+                    button {
+                        type = ButtonType.button
 
-                    +" example (no parameters)"
+                        code {
+                            +"useLocation()"
+                        }
+
+                        +" example (no parameters)"
+                    }
                 }
             }
 
@@ -140,11 +146,15 @@ private val RootMenu = VFC {
                 Link {
                     to = "$USE_LOCATION_PATH?key1=value1&key2=value2#value3"
 
-                    code {
-                        +"useLocation()"
-                    }
+                    button {
+                        type = ButtonType.button
 
-                    +" example (custom parameters)"
+                        code {
+                            +"useLocation()"
+                        }
+
+                        +" example (custom parameters)"
+                    }
                 }
             }
 
@@ -152,11 +162,15 @@ private val RootMenu = VFC {
                 Link {
                     to = USE_SEARCH_PATH
 
-                    code {
-                        +"useSearchParams()"
-                    }
+                    button {
+                        type = ButtonType.button
 
-                    +" example (no parameters)"
+                        code {
+                            +"useSearchParams()"
+                        }
+
+                        +" example (no parameters)"
+                    }
                 }
             }
 
@@ -164,11 +178,15 @@ private val RootMenu = VFC {
                 Link {
                     to = "$USE_SEARCH_PATH?key1=value1&key2=value2"
 
-                    code {
-                        +"useSearchParams()"
-                    }
+                    button {
+                        type = ButtonType.button
 
-                    +" example (custom parameters)"
+                        code {
+                            +"useSearchParams()"
+                        }
+
+                        +" example (custom parameters)"
+                    }
                 }
             }
 
@@ -176,11 +194,15 @@ private val RootMenu = VFC {
                 Link {
                     to = USE_PARAMS_PATH
 
-                    code {
-                        +"useParams()"
-                    }
+                    button {
+                        type = ButtonType.button
 
-                    +" example (no parameters)"
+                        code {
+                            +"useParams()"
+                        }
+
+                        +" example (no parameters)"
+                    }
                 }
             }
 
@@ -188,11 +210,15 @@ private val RootMenu = VFC {
                 Link {
                     to = "$USE_PARAMS_PATH/value1/value2"
 
-                    code {
-                        +"useParams()"
-                    }
+                    button {
+                        type = ButtonType.button
 
-                    +" example (custom parameters)"
+                        code {
+                            +"useParams()"
+                        }
+
+                        +" example (custom parameters)"
+                    }
                 }
             }
         }
