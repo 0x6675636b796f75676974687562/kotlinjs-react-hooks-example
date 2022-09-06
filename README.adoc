@@ -1,0 +1,6 @@
+= An example of how `useLocation()`, `useSearchParams()`, and `useParams()` hooks can be used
+
+Links:
+
+ * https://v5.reactrouter.com/web/api/Hooks/uselocation[`useLocation()`]
+ * https://v5.reactrouter.com/web/api/Hooks/useparams[`useParams()`]
