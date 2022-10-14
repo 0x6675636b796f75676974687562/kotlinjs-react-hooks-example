@@ -27,8 +27,3 @@ jobs:
       - name: 'Execute Gradle build'
         run: ./gradlew build
         shell: bash
-
-      - name: 'diKTat Check'
-        continue-on-error: true
-        run: ./gradlew diktatCheck
-        shell: bash
